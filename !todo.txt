@@ -1,0 +1,5 @@
+1. zrobic modyfikacje pfrofilu a nie tylko dodaj i usun :) - sekcja czwarta!
+2. sekcja routes - update comment
+3. podmenic favicon.ico
+4. przerobic config tak aby wszystkie routy poszly skonfigurowane
+5. wprowadzic w profilu dycje imienia

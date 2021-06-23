@@ -1,0 +1,43 @@
+{
+  "name": "devconnector_mern_app",
+  "version": "1.0.0",
+  "description": "social network for developers by misza & traversy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "dev" : "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misza777/devconnector_traversy_mern_app.git"
+  },
+  "keywords": [
+    "mern",
+    "reactjs",
+    "app"
+  ],
+  "author": "Misza & Brad Traversy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/misza777/devconnector_traversy_mern_app/issues"
+  },
+  "homepage": "https://github.com/misza777/devconnector_traversy_mern_app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.4",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "gravatar": "^1.8.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.18",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
